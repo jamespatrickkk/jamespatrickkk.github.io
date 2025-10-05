@@ -2,69 +2,80 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: #fef8e6;
+    }
+
+    .header {
+      background-color: #1f628e;
+      color: #9bd8e7;
+      font-family: 'Poppins', sans-serif;
+      padding: 25px;
+    }
+
+    .image-container {
+      position: relative;
+      width: 100%;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: contain;
+    }
+
+    /* Centered button at bottom of image */
+    .button-overlay {
+      position: absolute;
+      bottom: 40px;
+      /* slightly above bottom edge */
+      left: 47%;
+    }
+
+    .button-overlay .btn {
+      background-color: #1f628e;
+      color: #fff;
+      border: none;
+      padding: 12px 35px;
+      font-size: 1.2rem;
+      border-radius: 30px;
+    }
+
+    .button-overlay .btn:hover {
+      background-color: #14506e;
+    }
+  </style>
 </head>
 
 <body>
+  <div class="container-fluid p-0">
+    <div class="row g-0">
+      <div class="col-12 header">
+      </div>
 
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#efaced">
-            <a class="navbar-brand" href="#" style="margin-left: 10px;">My Portfolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Skills</a>
-                    </li>
-                </ul>
-            </div>
-            </div>
-        </nav>
-
-        <div id="carouselExample" class="carousel slide">
-            <div style="margin-top: 20px;"></div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="C:\3RD YEAR 1ST SEM\PORTFOLIO\PIC3.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="C:\3RD YEAR 1ST SEM\PORTFOLIO\PIC1.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="C:\3RD YEAR 1ST SEM\PORTFOLIO\PIC2.jpg" class="d-block w-100" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+      <div class="col-12 image-container">
+        <img src="C:\3RD YEAR 1ST SEM\my port\Picture\MAIN.png" alt="Profile Picture">
+        <div class="button-overlay">
+          <button type="button" class="btn" onclick="location.href='home.html'">Welcome</button>
         </div>
+      </div>
+    </div>
+  </div>
 
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-            crossorigin="anonymous"></script>
-    </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
 
 </html>
